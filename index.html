@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>FizzBuzz</title>
 </head>
 <body>
+
+    <div class="mainContent">
+        <div class="userInputContent">
+            <label for="">Enter a Number between 1 and 50 to play Fizz Buzz</label>
+            <input id="userInput" type="text" placeholder="Enter a number">
+            <button id="submitButton">Submit Number</button>
+        </div>
+
+        <div class="resultOutput">
+            <div id="resultList"></div>
+        </div>
+    </div>
+
+    
     
 </body>
 
 <script>
-    let userInput = parseInt(prompt("Enter a number between 1 and 50"));
+    //let userInput = parseInt(prompt("Enter a number between 1 and 50"));
 
         for(i = 1; i <= userInput; i++)
         {
