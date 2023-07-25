@@ -1,0 +1,51 @@
+body{
+    background-color: #45657A;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.userInputContent{
+    display: flex;
+    width: 768px;
+    height: 350px;
+    background-color: #6899BA;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+#userInput{
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#submitButton{
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+.resultOutput{
+    display: flex;
+    width: 768px;
+    height: 500px;
+    border: 2px solid black;
+}
