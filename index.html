@@ -12,11 +12,16 @@
         <div class="userInputContent">
             <label for="">Enter a Number between 1 and 50 to play Fizz Buzz</label>
             <input id="userInput" type="text" placeholder="Enter a number">
-            <button id="submitButton">Submit Number</button>
+            <button onclick="fizzBuzz()" id="submitButton">Submit Number</button>
         </div>
 
         <div class="resultOutput">
-            <div id="resultList"></div>
+            <div>
+                <h3>Results</h3>
+            </div>
+            <div>
+                <pre id="display"></pre>
+            </div>
         </div>
     </div>
 
@@ -25,7 +30,12 @@
 </body>
 
 <script>
-    //let userInput = parseInt(prompt("Enter a number between 1 and 50"));
+
+    function fizzBuzz()
+    {
+        let userInput = parseInt(document.getElementById("userInput").value);
+
+        let resultArray = [];
 
         for(i = 1; i <= userInput; i++)
         {
@@ -34,21 +44,25 @@
 
             if(fizzOutput == 0 && buzzOutput == 0)
             {
-                console.log("FizzBuzz");
+                resultArray.push('FizzBuzz');
             }
             else if(buzzOutput == 0)
             {
-                console.log("Buzz");
+                resultArray.push('Buzz');
             }
             else if(fizzOutput == 0)
             {
-                console.log("Fizz");
+                resultArray.push('Fizz');
             }
             else
             {
-                console.log(i);
+                resultArray.push(i);
             }
         }
 
+        const string = JSON.stringify(resultArray,null, Array.length).replace(/]|[[]/g, '');
+
+        document.querySelector("#display").innerHTML = string;
+    }
 </script>
 </html>

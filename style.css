@@ -11,7 +11,6 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    gap: 50px;
 }
 
 .userInputContent{
@@ -46,6 +45,10 @@ body{
 .resultOutput{
     display: flex;
     width: 768px;
-    height: 500px;
-    border: 2px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
